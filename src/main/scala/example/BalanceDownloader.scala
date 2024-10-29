@@ -88,7 +88,7 @@ object BalanceDownloader {
         model.write
             .mode("overwrite")
             .option("header", "true")
-            .csv("data/dsBalanceNacionalTotal.csv")
+            .csv("data/dsBalanceNacionalTotal1.csv")
     } else {
         println("No se obtuvieron respuestas para la API")
     }

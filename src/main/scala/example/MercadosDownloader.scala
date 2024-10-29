@@ -10,9 +10,6 @@ import scala.concurrent.duration._
 import org.apache.spark.sql.{DataFrame,SparkSession}
 import org.apache.spark.sql.functions._
 
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 import example.Utils._
 
@@ -39,12 +36,11 @@ object MercadosDownloader {
 
     
     // Crear sesión de Spark
-    val spark = {
-        SparkSession.builder()
+    val spark = SparkSession.builder()
             .appName("MercadosDownloader")
             .master("local[*]")
             .getOrCreate() 
-    }
+    
 
     // Creamos secuencia de parejas (String, String) segun las fechas que le hemos dado y el intervalo
     val rangoFechas = buildDateRange(start, end , interval) 
@@ -92,7 +88,7 @@ object MercadosDownloader {
         modelMercados.write
             .mode("overwrite")
             .option("header", "true")
-            .csv("data/datasetMercadoNacionalTotal.csv")
+            .csv("data/dsMercadoNacional14-24.csv")
     } else {
         println("No se obtuvieron respuestas para la API")
     }
@@ -108,7 +104,7 @@ object MercadosDownloader {
 
 
 
-  //Transformamos los datos de la API al modelo deseado
+  //Transformamos los datos de la API al modelo deseado para Mercado
 
   def transformToMercadosModel(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
 
