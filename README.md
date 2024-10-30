@@ -51,10 +51,4 @@ Abre los notebooks incluidos en la carpeta `notebooks/` para visualizar y analiz
 - **notebooks/**: Notebooks para el análisis y visualización de los datos.
 - **build.sbt**: Archivo de configuración del proyecto.
 
-## Contribuciones
 
-Las contribuciones son bienvenidas. Si deseas contribuir, por favor crea un **fork** del repositorio, realiza tus modificaciones y envía una **pull request**.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
