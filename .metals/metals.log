@@ -1369,3 +1369,89 @@ java.nio.file.FileSystemNotFoundException: Provider "vscode-notebook-cell" not i
 2024.10.24 19:28:43 INFO  time: compiled root in 0.91s
 oct 24, 2024 7:34:32 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFORMACIÓN: Unsupported notification method: $/setTrace
+2024.10.28 19:55:28 INFO  compiling root (1 scala source)
+2024.10.28 19:55:29 INFO  time: compiled root in 1.3s
+2024.10.29 19:42:33 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\dap-server.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.10.29 19:42:33 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\dap-client.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.10.29 19:42:33 INFO  Starting debug proxy for [example.MercadosDownloader]
+2024.10.29 19:42:34 INFO  Loaded expression compiler in 407 milliseconds
+2024.10.29 19:42:34 WARN  Found duplicate entry core_2.13 in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 19:42:34 WARN  Found duplicate entry jersey-server in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 19:42:34 WARN  Found duplicate entry jersey-client in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 19:42:46 INFO  Loaded all sources and classes in 11 seconds
+2024.10.29 19:42:46 INFO  Initialized Scala 3 decoder in 3 milliseconds
+2024.10.29 19:42:46 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:56544 .
+2024.10.29 19:42:46 INFO  Attaching to debuggee VM succeeded.
+oct 29, 2024 7:45:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5963
+2024.10.29 19:49:36 INFO  Canceling debug proxy for [example.MercadosDownloader]
+2024.10.29 19:49:36 INFO  Closing debug server tcp://0.0.0.0:56541
+2024.10.29 19:49:55 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\dap-server.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.10.29 19:49:55 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\dap-client.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.10.29 19:49:55 INFO  Starting debug proxy for [example.MercadosDownloader]
+2024.10.29 19:49:55 INFO  Loaded expression compiler in 1 millisecond
+2024.10.29 19:49:55 WARN  Found duplicate entry core_2.13 in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 19:49:55 WARN  Found duplicate entry jersey-server in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 19:49:55 WARN  Found duplicate entry jersey-client in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 19:50:00 INFO  Loaded all sources and classes in 4 seconds
+2024.10.29 19:50:00 INFO  Initialized Scala 3 decoder in 1 millisecond
+2024.10.29 19:50:00 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:57155 .
+2024.10.29 19:50:00 INFO  Attaching to debuggee VM succeeded.
+oct 29, 2024 7:50:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6135
+oct 29, 2024 7:50:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6136
+oct 29, 2024 7:50:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6137
+oct 29, 2024 7:50:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6138
+oct 29, 2024 7:50:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6139
+oct 29, 2024 7:50:57 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6140
+2024.10.29 19:53:36 INFO  Closing debug server tcp://0.0.0.0:57152
+2024.10.29 19:53:36 INFO  Canceling debug proxy for [example.MercadosDownloader]
+2024.10.29 19:57:46 INFO  compiling root (1 scala source)
+2024.10.29 19:57:47 INFO  time: compiled root in 1.15s
+2024.10.29 19:58:05 INFO  compiling root (1 scala source)
+2024.10.29 19:58:05 INFO  time: compiled root in 0.77s
+2024.10.29 21:11:46 INFO  compiling root (1 scala source)
+2024.10.29 21:11:46 INFO  time: compiled root in 0.91s
+2024.10.29 21:16:06 INFO  compiling root (1 scala source)
+2024.10.29 21:16:06 INFO  time: compiled root in 0.93s
+2024.10.29 21:16:15 INFO  compiling root (1 scala source)
+2024.10.29 21:16:15 INFO  time: compiled root in 0.79s
+2024.10.29 21:18:31 INFO  compiling root (1 scala source)
+2024.10.29 21:18:31 INFO  time: compiled root in 0.87s
+2024.10.29 21:20:38 INFO  compiling root (1 scala source)
+2024.10.29 21:20:38 INFO  time: compiled root in 0.92s
+2024.10.29 21:20:47 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\dap-server.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.10.29 21:20:47 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\dap-client.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.10.29 21:20:47 INFO  Starting debug proxy for [example.MercadosDownloader]
+2024.10.29 21:20:47 INFO  Loaded expression compiler in 1 millisecond
+2024.10.29 21:20:47 WARN  Found duplicate entry core_2.13 in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 21:20:47 WARN  Found duplicate entry jersey-server in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 21:20:47 WARN  Found duplicate entry jersey-client in debuggee MainClassDebugAdapter(root, example.MercadosDownloader)
+2024.10.29 21:20:50 INFO  Loaded all sources and classes in 3 seconds
+2024.10.29 21:20:50 INFO  Initialized Scala 3 decoder in 0 milliseconds
+2024.10.29 21:20:50 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:59802 .
+2024.10.29 21:20:50 INFO  Attaching to debuggee VM succeeded.
+2024.10.29 21:21:10 INFO  Canceling debug proxy for [example.MercadosDownloader]
+2024.10.29 21:21:10 INFO  Closing debug server tcp://0.0.0.0:59800
+2024.10.29 21:24:29 INFO  compiling root (1 scala source)
+2024.10.29 21:24:29 INFO  time: compiled root in 0.91s
+2024.10.29 21:28:12 INFO  compiling root (1 scala source)
+2024.10.29 21:28:12 INFO  time: compiled root in 0.32s
+2024.10.29 21:28:37 INFO  compiling root (1 scala source)
+2024.10.29 21:28:37 INFO  time: compiled root in 0.28s
+2024.10.29 21:28:54 INFO  compiling root (1 scala source)
+2024.10.29 21:28:54 INFO  time: compiled root in 0.79s
+2024.10.29 21:30:12 INFO  compiling root (1 scala source)
+2024.10.29 21:30:12 INFO  time: compiled root in 0.82s
+2024.10.29 21:30:18 INFO  compiling root (1 scala source)
+2024.10.29 21:30:18 INFO  time: compiled root in 0.79s
+2024.10.30 01:15:35 INFO  Shutting down server
+2024.10.30 01:15:35 INFO  shutting down Metals
+2024.10.30 01:15:35 INFO  Shut down connection with build server.
+2024.10.30 01:15:35 INFO  Shut down connection with build server.
+2024.10.30 01:15:35 INFO  Exiting server

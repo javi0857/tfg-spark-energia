@@ -34,7 +34,7 @@ object DemandaDownloader {
     // Crear sesión de Spark
     val spark = {
         SparkSession.builder()
-            .appName("MercadosDownloader")
+            .appName("DemandaDownloader")
             .master("local[*]")
             .getOrCreate() 
     }
@@ -85,10 +85,12 @@ object DemandaDownloader {
         //Imprimimos primeras lineas del modelo
         model.show() 
 
+        //Escribimos datos en .csv o .parquet
         model.write
             .mode("overwrite")
-            .option("header", "true")
-            .csv("data/dsDemandaNacionalTotal.csv")
+            //.option("header", "true").csv("data/csv/dsDemandaNacional14-24.csv")
+            .parquet("data/parquet/dsDemandaNacional14-24.parquet")
+
     } else {
         println("No se obtuvieron respuestas para la API")
     }

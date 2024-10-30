@@ -34,7 +34,7 @@ object BalanceDownloader {
     // Crear sesión de Spark
     val spark = {
         SparkSession.builder()
-            .appName("MercadosDownloader")
+            .appName("BalanceDownloader")
             .master("local[*]")
             .getOrCreate() 
     }
@@ -85,10 +85,13 @@ object BalanceDownloader {
         //Imprimimos primeras lineas del modelo
         model.show() 
 
+        //Escribimos los datos en .csv o .parquet
         model.write
             .mode("overwrite")
-            .option("header", "true")
-            .csv("data/dsBalanceNacionalTotal1.csv")
+            //.option("header", "true").csv("data/csv/dsBalanceNacional11-24.csv")
+            .parquet("data/parquet/dsBalanceNacional11-24.parquet")
+
+
     } else {
         println("No se obtuvieron respuestas para la API")
     }

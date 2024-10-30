@@ -2,7 +2,6 @@ package example
 
 import scala.concurrent.{Future, Await}
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.util.{Success, Failure}
 
 import scala.concurrent.duration._
 
@@ -10,9 +9,7 @@ import scala.concurrent.duration._
 import org.apache.spark.sql.{DataFrame,SparkSession}
 import org.apache.spark.sql.functions._
 
-
 import example.Utils._
-
 
 object MercadosDownloader {
   def main(args: Array[String]): Unit = {
@@ -83,12 +80,15 @@ object MercadosDownloader {
         val listModels = listResponses.map{
             response => transformToMercadosModel(responseToDF(response)(spark))(spark)
         }
-        val modelMercados = listModels.reduce(_ union _)
-
+        val modelMercados = listModels.reduce((df1, df2) => df1.unionByName(df2, allowMissingColumns = true))
+        modelMercados.show()
+        
+        //Escribimos los datos en .csv o .parquet
         modelMercados.write
             .mode("overwrite")
-            .option("header", "true")
-            .csv("data/dsMercadoNacional14-24.csv")
+            //.option("header", "true").csv("data/csv/dsMercadoNacionalTotal.csv")
+            .parquet("data/parquet/dsMercadoNacionalTotal.parquet")
+
     } else {
         println("No se obtuvieron respuestas para la API")
     }
@@ -142,16 +142,16 @@ object MercadosDownloader {
 
             
         }
-        // Añadir columnas si no existen (hasta 2022 no había valor mercado PVPC)
-        val columnasNecesarias = Seq("Valor_PVPC", "Porcentaje_PVPC", "Valor_Mercado_Spot", "Porcentaje_Mercado_Spot")
-        val completeDF = columnasNecesarias.foldLeft(renamedDF) { (df, columna) =>
-            if (!df.columns.contains(columna)) {
-                df.withColumn(columna, lit(null)) // Añadir columna vacía si no existe
-            } else {
-                df
-            }
-        }
+        // // Añadir columnas si no existen (hasta 2022 no había valor mercado PVPC)
+        // val columnasNecesarias = Seq("Valor_PVPC", "Porcentaje_PVPC", "Valor_Mercado_Spot", "Porcentaje_Mercado_Spot")
+        // val completeDF = columnasNecesarias.foldLeft(renamedDF) { (df, columna) =>
+        //     if (!df.columns.contains(columna)) {
+        //         df.withColumn(columna, lit(null).cast("double")) // Añadir columna vacía si no existe
+        //     } else {
+        //         df
+        //     }
+        // }
 
-        completeDF 
+        renamedDF 
     }
 }
