@@ -10,6 +10,7 @@ import org.apache.spark.sql.{DataFrame,SparkSession}
 import org.apache.spark.sql.functions._
 
 import example.Utils._
+import cats.instances.boolean
 
 object BalanceDownloader {
   def main(args: Array[String]): Unit = {
@@ -77,6 +78,8 @@ object BalanceDownloader {
 
     //Ejecutar si no esta vacio
     if (listResponses.nonEmpty){
+
+
         val listModels = listResponses.map{
             response => transformToBalanceModel(responseToDF(response)(spark))(spark)
         }
@@ -129,6 +132,7 @@ object BalanceDownloader {
             .select(
                 $"FamilyGroup.type".as("Familia"),
                 $"TypeGroup.type".as("Tipo"),
+                $"TypeGroup.attributes.composite".as("Compuesto"),
                 $"Values.datetime".as("FechaCompleta"), 
                 $"Values.percentage".as("Porcentaje"),
                 $"Values.value".as("Valor")
