@@ -87,7 +87,7 @@ object MercadosDownloader {
         modelMercados.write
             .mode("overwrite")
             //.option("header", "true").csv("data/csv/dsMercadoNacionalTotal.csv")
-            .parquet("data/parquet/dsMercadoNacionalTotal.parquet")
+            .parquet("data/parquet/dsMercadoNacionalTotalPrueba.parquet")
 
     } else {
         println("No se obtuvieron respuestas para la API")
@@ -131,17 +131,25 @@ object MercadosDownloader {
             )
             
         // Renombrar columnas si existen
-        val renamedDF = pivotedDF.columns.foldLeft(pivotedDF) { (df, colName) =>
-            colName match {
-                case "PVPC (€/MWh)_Valor" => df.withColumnRenamed("PVPC (€/MWh)_Valor", "Valor_PVPC")
-                case "PVPC (€/MWh)_Porcentaje" => df.withColumnRenamed("PVPC (€/MWh)_Porcentaje", "Porcentaje_PVPC")
-                case "Precio mercado spot_Valor" => df.withColumnRenamed("Precio mercado spot_Valor", "Valor_Mercado_Spot")
-                case "Precio mercado spot_Porcentaje" => df.withColumnRenamed("Precio mercado spot_Porcentaje", "Porcentaje_Mercado_Spot")
-                case _ => df
-            }
+        // val renamedDF = pivotedDF.columns.foldLeft(pivotedDF) { (df, colName) =>
+        //     colName match {
+        //         case "PVPC (€/MWh)_Valor" => df.withColumnRenamed("PVPC (€/MWh)_Valor", "Valor_PVPC")
+        //         case "PVPC (€/MWh)_Porcentaje" => df.withColumnRenamed("PVPC (€/MWh)_Porcentaje", "Porcentaje_PVPC")
+        //         case "Precio mercado spot_Valor" => df.withColumnRenamed("Precio mercado spot_Valor", "Valor_Mercado_Spot")
+        //         case "Precio mercado spot_Porcentaje" => df.withColumnRenamed("Precio mercado spot_Porcentaje", "Porcentaje_Mercado_Spot")
+        //         case _ => df
+        //     }
+        // }
+        
+        val renamedDF = pivotedDF
+            .withColumnRenamed("PVPC (€/MWh)_Valor", "Valor_PVPC")
+            .withColumnRenamed("PVPC (€/MWh)_Porcentaje", "Porcentaje_PVPC")
+            .withColumnRenamed("Precio mercado spot_Valor", "Valor_Mercado_Spot")
+            .withColumnRenamed("Precio mercado spot_Porcentaje", "Porcentaje_Mercado_Spot")
 
+        
             
-        }
+        
         // // Añadir columnas si no existen (hasta 2022 no había valor mercado PVPC)
         // val columnasNecesarias = Seq("Valor_PVPC", "Porcentaje_PVPC", "Valor_Mercado_Spot", "Porcentaje_Mercado_Spot")
         // val completeDF = columnasNecesarias.foldLeft(renamedDF) { (df, columna) =>

@@ -2826,3 +2826,121 @@ INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying wi
 2024.11.21 13:38:45 INFO  time: compiled root in 1.43s
 2024.11.21 13:38:56 INFO  compiling root (1 scala source)
 2024.11.21 13:38:56 INFO  time: compiled root in 0.95s
+nov 21, 2024 8:01:30 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7095
+2024.11.21 20:01:40 INFO  compiling root (1 scala source)
+2024.11.21 20:01:42 INFO  time: compiled root in 1.56s
+2024.11.21 20:11:23 INFO  compiling root (1 scala source)
+2024.11.21 20:11:24 INFO  time: compiled root in 1.02s
+2024.11.22 21:13:59 INFO  Started: Metals version 1.4.1 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.95.2.
+2024.11.22 21:14:03 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.22 21:14:03 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\RegionesBalanceDownloader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.22 21:14:03 INFO  Attempting to connect to the build server...
+2024.11.22 21:14:03 INFO  No running Bloop server found, starting one.
+2024.11.22 21:14:06 INFO  Starting compilation server
+2024.11.22 21:14:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.22 21:14:11 INFO  Attempting to connect to the build server...
+2024.11.22 21:14:11 INFO  Found a Bloop server running
+2024.11.22 21:14:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.22 21:14:12 INFO  time: Connected to build server in 8.18s
+2024.11.22 21:14:12 INFO  Connected to Build server: Bloop v2.0.5
+2024.11.22 21:14:11 INFO  time: Imported build in 0.23s
+2024.11.22 21:14:11 INFO  running doctor check
+2024.11.22 21:14:11 INFO  java targets: spark-datos-energia-build, root-test, root
+2024.11.22 21:14:30 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.22 21:14:44 INFO  time: indexed workspace in 32s
+2024.11.23 01:41:10 INFO  Shutting down server
+2024.11.23 01:41:10 INFO  shutting down Metals
+2024.11.23 01:41:10 INFO  Shut down connection with build server.
+2024.11.23 01:41:10 INFO  Shut down connection with build server.
+2024.11.23 01:41:10 INFO  Exiting server
+2024.11.25 18:18:01 INFO  Started: Metals version 1.4.1 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.95.3.
+2024.11.25 18:18:01 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.25 18:18:02 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\RegionesBalanceDownloader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.25 18:18:03 INFO  Attempting to connect to the build server...
+2024.11.25 18:18:03 INFO  No running Bloop server found, starting one.
+2024.11.25 18:18:05 INFO  Starting compilation server
+2024.11.25 18:18:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.25 18:18:11 INFO  Attempting to connect to the build server...
+2024.11.25 18:18:11 INFO  Found a Bloop server running
+2024.11.25 18:18:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.25 18:18:12 INFO  time: Connected to build server in 9.29s
+2024.11.25 18:18:12 INFO  Connected to Build server: Bloop v2.0.5
+2024.11.25 18:18:12 INFO  time: Imported build in 0.35s
+2024.11.25 18:18:12 INFO  running doctor check
+2024.11.25 18:18:12 INFO  java targets: spark-datos-energia-build, root-test, root
+2024.11.25 18:18:25 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.25 18:18:38 INFO  time: indexed workspace in 25s
+nov 27, 2024 7:22:29 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 296
+nov 27, 2024 7:22:29 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 295
+2024.11.28 10:56:13 INFO  Started: Metals version 1.4.1 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.95.3.
+2024.11.28 10:56:17 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.28 10:56:17 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\BalanceDownloader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.28 10:56:19 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\BalanceDownloader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.28 10:56:20 INFO  Attempting to connect to the build server...
+2024.11.28 10:56:20 INFO  No running Bloop server found, starting one.
+2024.11.28 10:56:22 INFO  Starting compilation server
+2024.11.28 10:56:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.28 10:56:27 INFO  Attempting to connect to the build server...
+2024.11.28 10:56:27 INFO  Found a Bloop server running
+2024.11.28 10:56:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.28 10:56:27 INFO  time: Connected to build server in 7.59s
+2024.11.28 10:56:27 INFO  Connected to Build server: Bloop v2.0.5
+2024.11.28 10:56:27 INFO  time: Imported build in 0.18s
+2024.11.28 10:56:27 INFO  running doctor check
+2024.11.28 10:56:27 INFO  java targets: spark-datos-energia-build, root-test, root
+2024.11.28 10:56:42 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.28 10:56:55 INFO  time: indexed workspace in 27s
+nov 28, 2024 2:33:41 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+nov 28, 2024 2:33:49 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+nov 28, 2024 2:34:02 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+nov 28, 2024 2:34:13 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+nov 28, 2024 2:34:22 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+nov 28, 2024 2:34:27 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+nov 28, 2024 2:34:36 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2024.11.28 20:29:01 INFO  compiling root (1 scala source)
+2024.11.28 20:29:02 INFO  time: compiled root in 1.51s
+nov 28, 2024 8:29:13 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 385
+2024.11.28 20:29:33 INFO  compiling root (1 scala source)
+2024.11.28 20:29:33 INFO  time: compiled root in 0.33s
+2024.11.28 20:30:05 INFO  compiling root (1 scala source)
+2024.11.28 20:30:06 INFO  time: compiled root in 1.04s
+2024.11.28 20:32:36 INFO  compiling root (1 scala source)
+2024.11.28 20:32:38 INFO  time: compiled root in 2.04s
+2024.11.28 20:32:52 INFO  compiling root (1 scala source)
+2024.11.28 20:32:52 INFO  time: compiled root in 0.34s
+2024.11.28 20:32:53 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\MercadosDownloader.scala
+2024.11.28 20:33:12 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\MercadosDownloader.scala
+2024.11.28 20:33:13 INFO  compiling root (1 scala source)
+2024.11.28 20:33:13 INFO  time: compiled root in 0.2s
+2024.11.28 20:33:14 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\MercadosDownloader.scala
+2024.11.28 20:33:28 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\MercadosDownloader.scala
+2024.11.28 20:33:31 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\MercadosDownloader.scala
+2024.11.28 20:33:31 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\MercadosDownloader.scala
+2024.11.28 20:33:32 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\MercadosDownloader.scala
+2024.11.28 20:33:33 INFO  compiling root (1 scala source)
+2024.11.28 20:33:34 INFO  time: compiled root in 1.11s
+2024.11.28 20:33:43 INFO  compiling root (1 scala source)
+2024.11.28 20:33:43 INFO  time: compiled root in 0.28s
+2024.11.28 20:33:48 INFO  compiling root (1 scala source)
+2024.11.28 20:33:48 INFO  time: compiled root in 0.94s
+2024.11.28 20:34:06 INFO  compiling root (1 scala source)
+2024.11.28 20:34:06 INFO  time: compiled root in 0.82s
+2024.12.08 19:17:20 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2024.12.08 19:17:20 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2024.12.08 19:17:20 INFO  No running Bloop server found, starting one.
+2024.12.08 19:17:20 INFO  No running Bloop server found, starting one.

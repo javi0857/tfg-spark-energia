@@ -36,7 +36,7 @@ object RegionsBalanceDownoloader {
 
         //Leemos información con los id de las regiones
 
-        val filePath = "data/csv/regionDataAux.csv"         
+        val filePath = "data/csv/csvRegionesParaDescargar.csv"         
         val dsRegion: Dataset[RegionData] = spark.read
             .option("header", "true") // Si el archivo tiene un encabezado
             .option("inferSchema", "true") // Para inferir automáticamente el esquema
@@ -94,9 +94,6 @@ object RegionsBalanceDownoloader {
     }
 
     
-
-
-
 
    def callApiBalance (start: String, end: String, interval: String, geoLimit: String, geoIds: String): Seq[Right[Nothing,String]] = {
 

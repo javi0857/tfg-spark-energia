@@ -29,82 +29,50 @@ object Main {
             .getOrCreate()  
 
         import spark.implicits._ 
-
-
-        val rangoFechas = buildDateRange("2014-01-01T00:00","2024-10-31T23:59","month")  
+        import org.apache.spark.sql.expressions.Window
 
         
 
-        //Doy valor a los parámetros para llamar a la API
+        
+            // Filtrar los datos para excluir ciertos valores
+        val dfBalanceFiltrado = dfBalance
+        .filter($"Compuesto" === false)
+        .filter($"Familia" =!= "Demanda")
+        .withColumn("FechaDia", date_format(col("FechaCompleta"), "yyyy-MM-dd")) // Extraer solo la parte del día
 
-        val category = "generacion"
-        val widget = "estructura-generacion"
-        val time_trunc = "month" 
-        val lang = "es"
-        val geo_trunc = "electric_system"
-        val geo_limit = "ccaa"
-        val geo_ids = "13"
+        // Calcular el porcentaje de cada tipo de energía respecto al total diario
+        val windowTotal = Window.partitionBy("FechaDia")
 
+        val dfBalanceConPorcentajeTotal = dfBalanceFiltrado
+        .withColumn("GeneracionTotalDiaria", sum("Valor").over(windowTotal)) // Total de generación por cada día
+        .withColumn("PorcentajeRespectoTotal", round((col("Valor") / col("GeneracionTotalDiaria")) * 100, 2))
+        .select("Familia", "Tipo", "FechaCompleta", "FechaDia", "Valor", "PorcentajeRespectoTotal")
+
+        // Calcular el ranking por porcentaje
+        val windowRanking = Window.partitionBy("FechaDia").orderBy(desc("PorcentajeRespectoTotal"))
+
+        val dfRankeado = dfBalanceConPorcentajeTotal
+        .withColumn("rank", row_number().over(windowRanking))
+        .filter($"rank" <= 3) // Filtrar solo los primeros 3 valores
+        .orderBy("FechaCompleta", "rank")
+
+        // Pivotar para generar columnas separadas por rank
+        val dfPivotadoTipo = dfRankeado
+            .groupBy("FechaCompleta")
+            .pivot("rank")
+            .agg(first("Tipo").as("Tipo"))
+
+        val dfPivotadoPorcentaje = dfRankeado
+            .groupBy("FechaCompleta")
+            .pivot("rank")
+            .agg(first("PorcentajeRespectoTotal").as("Porcentaje"))
+
+        val dfFinal = dfPivotadoTipo
+            .join(dfPivotadoPorcentaje, "FechaCompleta")
 
       
 
 
-        //val listauris = rangoFechas.map { case (start, end) => createUri(category, widget, start, end, time_trunc, lang) }
-             
-        //listauris.foreach(println)
-
-        // val startTimeSequential = System.nanoTime()  // Registrar el tiempo inicial
-
-        // val listaResponse = listauris.map(getApiData(_))  // Ejecutar las llamadas a la API
-
-        // val endTimeSequential = System.nanoTime()  // Registrar el tiempo final
-
-        // val elapsedTimeSequential = (endTimeSequential - startTimeSequential) / 1e9  // Convertir a segundos
-
-        // println(s"Tiempo de ejecución secuencial: $elapsedTimeSequential segundos")
-
-
-        val startTimeConcurrent = System.nanoTime()  // Registrar el tiempo inicial
-
-        // Crear los Futures para cada URI
-        // val futureResponses = listaUris.map { uri =>
-        //     Future {
-        //         getApiData(uri) match {
-        //         case Right(response) => response
-        //         case Left(error) => throw new Exception(error)
-        //         }
-        //     }
-        // }
-
-        // Utilizar Future.sequence para esperar a que todos los Futures se completen
-        // val combinedFuture = Future.sequence(futureResponses)
-
-        // // Registrar el tiempo final una vez que todos los Futures se completen
-        // combinedFuture.onComplete {
-        //     case Success(_) => 
-        //         val endTimeConcurrent = System.nanoTime()
-        //         val elapsedTimeConcurrent = (endTimeConcurrent - startTimeConcurrent) / 1e9  // Convertir a segundos
-        //         println(s"Tiempo de ejecución concurrente: $elapsedTimeConcurrent segundos")
-            
-        //     case Failure(e) =>
-        //         println(s"Error en alguna de las descargas: ${e.getMessage}")
-        // }
-
-        // Utilizar Await para bloquear hasta que todos los Futures se completen (para no terminar el programa)
-        // Await.result(combinedFuture, Duration.Inf)
-
-        // println("FINAL DE LA EJECUCIÓN")
-        // val listModelsMercados = listaResponse.map {
-        //     json => transformToMercadosModel(responseToDF(json)(spark))(spark)
-        // }
-        // val modelMercados = listModelsMercados.reduce(_ union _)
-
-        // modelMercados.orderBy("Fecha")
-
-        // modelMercados.coalesce(1).write
-        //     .mode("overwrite")
-        //     .option("header", "true")
-        //     .csv("data/datasetMercadoNacional-14-24")
 
 
     
