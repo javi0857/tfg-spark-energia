@@ -113,11 +113,13 @@ object DemandaDownloader {
         .withColumn("TipoDemanda", $"included.type")
         .withColumn("Values", explode($"included.attributes.values"))
         .select(
-            $"Values.datetime".cast("timestamp").as("Fecha"),
+            $"Values.datetime".cast("timestamp").as("FechaAux"),
             $"TipoDemanda",
             $"Values.value".as("Valor"),
             $"Values.percentage".as("Porcentaje")
         )
+        .withColumn("Fecha", expr("FechaAux + INTERVAL 1 HOUR"))
+        .drop($"FechaAux")
     
     val pivotedDfDemanda = transformedDfDemanda     
         .groupBy("Fecha")

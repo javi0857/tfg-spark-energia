@@ -87,7 +87,7 @@ object MercadosDownloader {
         modelMercados.write
             .mode("overwrite")
             //.option("header", "true").csv("data/csv/dsMercadoNacionalTotal.csv")
-            .parquet("data/parquet/dsMercadoNacionalTotalPrueba.parquet")
+            .parquet("data/parquet/dsMercadoNacionalTotal.parquet")
 
     } else {
         println("No se obtuvieron respuestas para la API")
@@ -116,11 +116,13 @@ object MercadosDownloader {
             .withColumn("TipoMercado", $"included.type")
             .withColumn("Values", explode($"included.attributes.values"))
             .select(
-                $"Values.datetime".cast("timestamp").as("Fecha"),
+                $"Values.datetime".cast("timestamp").as("FechaAux"),
                 $"TipoMercado",
                 $"Values.value".as("Valor"),
                 $"Values.percentage".as("Porcentaje")
             )
+            .withColumn("Fecha", expr("FechaAux + INTERVAL 1 HOUR"))
+            .drop($"FechaAux")
 
         //Agrupar y pivotar el dataframe
         val pivotedDF = transformedDF.groupBy("Fecha")

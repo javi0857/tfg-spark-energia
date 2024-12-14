@@ -144,11 +144,12 @@ object BalanceDownloader {
                 $"FamilyGroup.type".as("Familia"),
                 $"TypeGroup.type".as("Tipo"),
                 $"TypeGroup.attributes.composite".as("Compuesto"),
-                $"Values.datetime".as("FechaCompleta"), 
+                $"Values.datetime".cast("timestamp").as("FechaAux"), 
                 $"Values.percentage".as("Porcentaje"),
                 $"Values.value".as("Valor")
             )
-            .withColumn("FechaCompleta", $"FechaCompleta".cast("timestamp"))
+            .withColumn("Fecha", expr("FechaAux + INTERVAL 1 HOUR"))
             .withColumn("BajasEmisiones", $"Tipo".isin(bajasEmisiones: _*))
+            .drop($"FechaAux")
     }
 }

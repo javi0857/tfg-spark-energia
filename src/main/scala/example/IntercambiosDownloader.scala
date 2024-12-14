@@ -114,12 +114,12 @@ object IntercambiosDownloader {
             .select(
                 $"CountryGroup.type".as("Pais"),
                 $"TypeGroup.type".as("TipoIntercambio"),
-                $"Values.datetime".as("FechaCompleta"), 
+                $"Values.datetime".cast("timestamp").as("FechaAux"), 
                 $"Values.percentage".as("Porcentaje"),
                 $"Values.value".as("Valor")
             )
-            .withColumn("Fecha", $"FechaCompleta".cast("timestamp"))
-            
+            .withColumn("Fecha", expr("FechaAux + INTERVAL 1 HOUR"))
+            .drop($"FechaAux")
     }
 
 }
