@@ -55,7 +55,7 @@ object Consulta2 {
         val mercadoDiario = dfMercados
             .groupBy(date_format(col("Fecha"),"yyyy-MM-dd").as("FechaDia"))
             .agg(avg("Valor_Mercado_Spot").as("ValorMercadoSpot"))
-            .withColumn("PrecioMercado_€", round(col("ValorMercadoSpot"), 2))
+            .withColumn("PrecioMercado", round(col("ValorMercadoSpot"), 2))
             .drop("ValorMercadoSpot")
 
 
@@ -73,18 +73,19 @@ object Consulta2 {
             .collect
             .toSeq 
 
-        // Filtrar el dataset de balance para incluir solo las fuentes principales
+
+        //Filtrar el dataset de balance para incluir solo las fuentes principales
         val dfBalanceFiltrado = dfBalance 
             .filter($"Tipo".isin(top7Energias: _*))
-            .withColumn("FechaDia", date_format(col("FechaCompleta"), "yyyy-MM-dd")) // Extraer solo la parte del día
+            .withColumn("FechaDia", date_format(col("Fecha"), "yyyy-MM-dd")) // Extraer solo la parte del día
 
-        // Calcular el porcentaje diario de cada tipo de energía
+        // // Calcular el porcentaje diario de cada tipo de energía
         val windowTotal = Window.partitionBy("FechaDia") // Ventana para agrupar por día
 
         val dfBalanceConPorcentajeTotal = dfBalanceFiltrado
             .withColumn("GeneracionTotalDiaria", sum("Valor").over(windowTotal)) // Total de generación por cada día
             .withColumn("PorcentajeRespectoTotal", round((col("Valor") / col("GeneracionTotalDiaria")) * 100, 2)) //Calcular porcentaje
-            .select("Familia", "Tipo", "FechaCompleta", "FechaDia", "Valor", "PorcentajeRespectoTotal") //Selectiono las columnas relevantes
+            .select("FechaDia", "Tipo", "Familia", "Valor", "PorcentajeRespectoTotal") //Selectiono las columnas relevantes
 
         // Pivotar para generar columnas separadas por rank
         val dfBalancePivotadoTipo = dfBalanceConPorcentajeTotal

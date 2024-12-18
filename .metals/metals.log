@@ -3179,3 +3179,167 @@ ADVERTENCIA: Unmatched cancel notification for request id 364
 2024.12.13 22:29:19 INFO  Shut down connection with build server.
 2024.12.13 22:29:19 INFO  Shut down connection with build server.
 2024.12.13 22:29:19 INFO  Exiting server
+2024.12.13 22:29:36 INFO  Started: Metals version 1.4.1 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.96.0.
+2024.12.13 22:29:36 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.12.13 22:29:37 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\IntercambiosDownloader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.13 22:29:37 INFO  Attempting to connect to the build server...
+2024.12.13 22:29:37 INFO  Found a Bloop server running
+2024.12.13 22:29:38 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\IntercambiosDownloader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.13 22:29:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.12.13 22:29:40 INFO  Attempting to connect to the build server...
+2024.12.13 22:29:40 INFO  Found a Bloop server running
+2024.12.13 22:29:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.12.13 22:29:41 INFO  time: Connected to build server in 3.88s
+2024.12.13 22:29:41 INFO  Connected to Build server: Bloop v2.0.5
+2024.12.13 22:29:41 INFO  time: Imported build in 0.11s
+2024.12.13 22:29:41 INFO  running doctor check
+2024.12.13 22:29:41 INFO  java targets: spark-datos-energia-build, root-test, root
+2024.12.13 22:29:48 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.12.13 22:29:51 INFO  time: indexed workspace in 9.6s
+2024.12.13 22:34:49 INFO  compiling root (1 scala source)
+2024.12.13 22:34:50 INFO  time: compiled root in 1.41s
+2024.12.13 22:35:05 INFO  compiling root (1 scala source)
+2024.12.13 22:35:06 INFO  time: compiled root in 1.28s
+dic 13, 2024 10:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 294
+dic 13, 2024 10:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 298
+dic 13, 2024 10:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 297
+dic 13, 2024 10:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 301
+dic 13, 2024 10:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 302
+dic 13, 2024 10:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 306
+dic 13, 2024 10:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 304
+dic 13, 2024 10:36:08 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 305
+2024.12.13 22:36:23 INFO  compiling root (1 scala source)
+2024.12.13 22:36:24 INFO  time: compiled root in 1.07s
+dic 13, 2024 10:38:42 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 433
+dic 13, 2024 10:39:00 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 606
+dic 13, 2024 10:39:32 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 712
+2024.12.13 22:41:16 INFO  compiling root (1 scala source)
+2024.12.13 22:41:17 INFO  time: compiled root in 1.04s
+2024.12.13 22:43:57 INFO  compiling root (1 scala source)
+2024.12.13 22:43:57 INFO  time: compiled root in 1s
+2024.12.13 22:44:08 INFO  compiling root (1 scala source)
+2024.12.13 22:44:09 INFO  time: compiled root in 1.14s
+dic 13, 2024 10:44:11 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1207
+dic 13, 2024 10:44:11 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1208
+2024.12.13 22:48:40 INFO  compiling root (1 scala source)
+2024.12.13 22:48:41 INFO  time: compiled root in 1s
+2024.12.13 22:50:14 INFO  compiling root (1 scala source)
+2024.12.13 22:50:15 INFO  time: compiled root in 1.16s
+2024.12.13 23:01:24 INFO  compiling root (1 scala source)
+2024.12.13 23:01:25 INFO  time: compiled root in 1.06s
+2024.12.13 23:16:35 INFO  compiling root (1 scala source)
+2024.12.13 23:16:37 INFO  time: compiled root in 1.16s
+2024.12.13 23:20:00 INFO  compiling root (1 scala source)
+2024.12.13 23:20:02 INFO  time: compiled root in 1.94s
+2024.12.13 23:29:13 INFO  compiling root (1 scala source)
+2024.12.13 23:29:14 INFO  time: compiled root in 1.54s
+2024.12.14 19:20:40 INFO  compiling root (1 scala source)
+2024.12.14 19:20:40 INFO  time: compiled root in 0.73s
+2024.12.14 19:22:37 INFO  compiling root (1 scala source)
+2024.12.14 19:22:37 INFO  time: compiled root in 0.88s
+dic 14, 2024 7:23:45 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2421
+2024.12.14 19:23:45 INFO  compiling root (2 scala sources)
+2024.12.14 19:23:45 INFO  time: compiled root in 0.4s
+2024.12.14 19:25:43 INFO  compiling root (2 scala sources)
+2024.12.14 19:25:43 INFO  time: compiled root in 0.26s
+2024.12.14 19:29:04 INFO  compiling root (2 scala sources)
+2024.12.14 19:29:04 INFO  time: compiled root in 0.53s
+2024.12.14 19:29:35 INFO  compiling root (2 scala sources)
+2024.12.14 19:29:36 WARN  1 deprecation (since 2.13.3); re-run with -deprecation for details
+2024.12.14 19:29:36 INFO  time: compiled root in 1.15s
+2024.12.14 21:11:16 INFO  compiling root (1 scala source)
+2024.12.14 21:11:17 INFO  time: compiled root in 1.31s
+2024.12.16 01:59:14 INFO  compiling root (2 scala sources)
+2024.12.16 01:59:16 INFO  time: compiled root in 1.8s
+dic 16, 2024 2:01:35 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 3511
+2024.12.16 02:02:40 INFO  compiling root (1 scala source)
+2024.12.16 02:02:41 INFO  time: compiled root in 1.38s
+dic 16, 2024 2:04:02 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 3808
+dic 16, 2024 2:04:18 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 3950
+2024.12.16 02:05:03 INFO  compiling root (1 scala source)
+2024.12.16 02:05:03 INFO  time: compiled root in 0.98s
+2024.12.16 02:15:05 INFO  Shutting down server
+2024.12.16 02:15:05 INFO  shutting down Metals
+2024.12.16 02:15:05 INFO  Shut down connection with build server.
+2024.12.16 02:15:05 INFO  Shut down connection with build server.
+2024.12.16 02:15:05 INFO  Exiting server
+2024.12.16 18:42:13 INFO  Started: Metals version 1.4.1 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.96.0.
+2024.12.16 18:42:13 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.12.16 18:42:13 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.16 18:42:16 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.16 18:42:16 INFO  Attempting to connect to the build server...
+2024.12.16 18:42:16 INFO  No running Bloop server found, starting one.
+2024.12.16 18:42:18 INFO  Starting compilation server
+2024.12.16 18:42:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.12.16 18:42:23 INFO  Attempting to connect to the build server...
+2024.12.16 18:42:23 INFO  Found a Bloop server running
+2024.12.16 18:42:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.12.16 18:42:24 INFO  time: Connected to build server in 7.21s
+2024.12.16 18:42:24 INFO  Connected to Build server: Bloop v2.0.5
+2024.12.16 18:42:24 INFO  time: Imported build in 0.2s
+2024.12.16 18:42:24 INFO  running doctor check
+2024.12.16 18:42:24 INFO  java targets: spark-datos-energia-build, root-test, root
+2024.12.16 18:42:38 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.12.16 18:42:56 INFO  time: indexed workspace in 31s
+dic 16, 2024 7:42:53 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 528
+2024.12.16 19:56:45 INFO  compiling root (1 scala source)
+2024.12.16 19:56:49 INFO  time: compiled root in 3.61s
+dic 16, 2024 8:21:02 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1150
+dic 17, 2024 9:49:51 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1259
+dic 17, 2024 9:55:02 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1424
+2024.12.17 21:55:14 INFO  compiling root (2 scala sources)
+2024.12.17 21:55:16 WARN  1 deprecation (since 2.13.3); re-run with -deprecation for details
+2024.12.17 21:55:16 INFO  time: compiled root in 2.5s
+dic 17, 2024 9:55:34 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1520
+dic 17, 2024 9:55:34 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1521
+dic 17, 2024 9:55:50 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1647
+dic 17, 2024 9:55:51 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1671
+dic 17, 2024 9:55:51 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1682
+2024.12.17 21:56:03 INFO  compiling root (1 scala source)
+2024.12.17 21:56:04 WARN  1 deprecation (since 2.13.3); re-run with -deprecation for details
+2024.12.17 21:56:04 INFO  time: compiled root in 1.18s
+2024.12.17 21:56:37 INFO  compiling root (1 scala source)
+2024.12.17 21:56:38 WARN  1 deprecation (since 2.13.3); re-run with -deprecation for details
+2024.12.17 21:56:38 INFO  time: compiled root in 1.06s
+2024.12.17 21:57:09 INFO  compiling root (1 scala source)
+2024.12.17 21:57:11 WARN  1 deprecation (since 2.13.0)
+2024.12.17 21:57:11 WARN  1 deprecation (since 2.13.3)
+2024.12.17 21:57:11 WARN  2 deprecations in total; re-run with -deprecation for details
+2024.12.17 21:57:11 INFO  time: compiled root in 1.08s
+dic 17, 2024 10:58:29 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1997
+dic 17, 2024 11:08:06 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2077
+dic 17, 2024 11:08:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2125
+dic 17, 2024 11:08:16 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2130
+2024.12.18 00:03:35 INFO  compiling root (1 scala source)
+2024.12.18 00:03:36 WARN  1 deprecation (since 2.13.3); re-run with -deprecation for details
+2024.12.18 00:03:36 INFO  time: compiled root in 1.39s
