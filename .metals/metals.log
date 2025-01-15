@@ -3343,3 +3343,185 @@ ADVERTENCIA: Unmatched cancel notification for request id 2130
 2024.12.18 00:03:35 INFO  compiling root (1 scala source)
 2024.12.18 00:03:36 WARN  1 deprecation (since 2.13.3); re-run with -deprecation for details
 2024.12.18 00:03:36 INFO  time: compiled root in 1.39s
+2024.12.18 18:28:06 INFO  Started: Metals version 1.4.2 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.96.0.
+2024.12.18 18:28:10 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\BalanceDownloader.scala. Using presentation compiler with project's scala-library version: 3.3.4
+dic 18, 2024 6:28:13 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1
+2024.12.18 18:28:13 INFO  Attempting to connect to the build server...
+2024.12.18 18:28:13 INFO  No running Bloop server found, starting one.
+2024.12.18 18:28:16 INFO  Starting compilation server
+2024.12.18 18:28:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.12.18 18:28:22 INFO  Attempting to connect to the build server...
+2024.12.18 18:28:22 INFO  Found a Bloop server running
+2024.12.18 18:28:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.12.18 18:28:23 INFO  time: Connected to build server in 9.75s
+2024.12.18 18:28:23 INFO  Connected to Build server: Bloop v2.0.6
+2024.12.18 18:28:22 INFO  time: Imported build in 0.19s
+2024.12.18 18:28:22 INFO  running doctor check
+2024.12.18 18:28:22 INFO  java targets: spark-datos-energia-build, root-test, root
+2024.12.18 18:29:01 INFO  time: indexed workspace in 37s
+2024.12.18 18:29:01 INFO  compiling root (9 scala sources)
+2024.12.18 18:29:08 WARN  1 deprecation (since 2.13.3)
+2024.12.18 18:29:08 WARN  1 deprecation (since 2.2.0)
+2024.12.18 18:29:08 WARN  2 deprecations in total; re-run with -deprecation for details
+2024.12.18 18:29:08 INFO  time: compiled root in 7.05s
+2024.12.18 18:59:56 INFO  compiling root (1 scala source)
+2024.12.18 18:59:58 INFO  time: compiled root in 1.64s
+2024.12.18 19:25:41 INFO  compiling root (1 scala source)
+2024.12.18 19:25:41 INFO  time: compiled root in 0.61s
+dic 18, 2024 7:26:12 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 171
+dic 18, 2024 7:26:12 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 173
+dic 18, 2024 7:26:12 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 172
+dic 18, 2024 7:26:12 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 175
+dic 18, 2024 7:26:12 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 176
+dic 18, 2024 7:26:12 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 178
+2024.12.18 19:26:26 INFO  compiling root (1 scala source)
+2024.12.18 19:26:28 WARN  1 deprecation (since 2.13.3); re-run with -deprecation for details
+2024.12.18 19:26:28 INFO  time: compiled root in 1.55s
+2024.12.18 19:26:35 INFO  compiling root (1 scala source)
+2024.12.18 19:26:35 INFO  time: compiled root in 0.73s
+2024.12.18 19:41:20 INFO  Shutting down server
+2024.12.18 19:41:20 INFO  shutting down Metals
+2024.12.18 19:41:20 INFO  Shut down connection with build server.
+2024.12.18 19:41:20 INFO  Shut down connection with build server.
+2024.12.18 19:41:20 INFO  Exiting server
+2024.12.18 20:28:27 INFO  Started: Metals version 1.4.2 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.96.1.
+2024.12.18 20:28:27 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala. Using presentation compiler with project's scala-library version: 3.3.4
+dic 18, 2024 8:28:30 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 4
+dic 18, 2024 8:28:30 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1
+2024.12.18 20:28:30 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.18 20:28:30 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.18 20:28:30 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala. Using presentation compiler with project's scala-library version: 3.3.4
+dic 18, 2024 8:28:30 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6
+2024.12.18 20:28:30 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.18 20:28:30 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.18 20:28:31 INFO  Attempting to connect to the build server...
+2024.12.18 20:28:31 INFO  No running Bloop server found, starting one.
+2024.12.18 20:28:33 INFO  Starting compilation server
+2024.12.18 20:28:35 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.12.18 20:28:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.12.18 20:28:38 INFO  Attempting to connect to the build server...
+2024.12.18 20:28:38 INFO  Found a Bloop server running
+2024.12.18 20:28:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.12.18 20:28:38 INFO  time: Connected to build server in 7.59s
+2024.12.18 20:28:38 INFO  Connected to Build server: Bloop v2.0.6
+2024.12.18 20:28:38 INFO  time: Imported build in 0.22s
+2024.12.18 20:28:38 INFO  running doctor check
+2024.12.18 20:28:38 INFO  java targets: spark-datos-energia-build, root-test, root
+2024.12.18 20:29:10 INFO  time: indexed workspace in 31s
+2024.12.18 20:29:24 INFO  compiling root (10 scala sources)
+2024.12.18 20:29:29 WARN  1 deprecation (since 2.13.3)
+2024.12.18 20:29:29 WARN  1 deprecation (since 2.2.0)
+2024.12.18 20:29:29 WARN  2 deprecations in total; re-run with -deprecation for details
+2024.12.18 20:29:29 INFO  time: compiled root in 6.01s
+dic 19, 2024 6:03:39 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 491
+2024.12.19 18:03:45 INFO  compiling root (1 scala source)
+2024.12.19 18:03:48 INFO  time: compiled root in 2.17s
+2024.12.19 18:03:50 INFO  compiling root (1 scala source)
+2024.12.19 18:03:52 WARN  1 deprecation (since 2.13.3); re-run with -deprecation for details
+2024.12.19 18:03:52 INFO  time: compiled root in 1.73s
+dic 19, 2024 6:05:00 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 601
+dic 19, 2024 6:05:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 702
+2024.12.19 18:05:22 INFO  compiling root (1 scala source)
+dic 19, 2024 6:05:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 704
+dic 19, 2024 6:05:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 710
+2024.12.19 18:05:23 INFO  time: compiled root in 1.15s
+2024.12.19 18:05:48 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta1.scala
+2024.12.19 18:05:48 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta1.scala
+2024.12.19 18:05:48 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta1.scala
+2024.12.19 18:05:48 INFO  compiling root (1 scala source)
+2024.12.19 18:05:48 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta1.scala
+2024.12.19 18:05:49 INFO  time: compiled root in 1.01s
+2024.12.20 01:14:35 INFO  compiling root (1 scala source)
+2024.12.20 01:14:35 INFO  time: compiled root in 0.56s
+2024.12.20 01:16:33 INFO  compiling root (1 scala source)
+2024.12.20 01:16:34 INFO  time: compiled root in 1.06s
+2024.12.20 03:45:31 INFO  Shutting down server
+2024.12.20 03:45:31 INFO  shutting down Metals
+2024.12.20 03:45:31 INFO  Shut down connection with build server.
+2024.12.20 03:45:31 INFO  Shut down connection with build server.
+2024.12.20 03:45:31 INFO  Exiting server
+2025.01.08 19:08:50 INFO  Started: Metals version 1.4.2 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.96.2.
+2025.01.08 19:08:50 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta2.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.08 19:08:53 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta2.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.08 19:08:53 INFO  Attempting to connect to the build server...
+2025.01.08 19:08:53 INFO  No running Bloop server found, starting one.
+2025.01.08 19:08:56 INFO  Starting compilation server
+2025.01.08 19:09:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.01.08 19:09:01 INFO  Attempting to connect to the build server...
+2025.01.08 19:09:01 INFO  Found a Bloop server running
+2025.01.08 19:09:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.01.08 19:09:02 INFO  time: Connected to build server in 8.35s
+2025.01.08 19:09:02 INFO  Connected to Build server: Bloop v2.0.6
+2025.01.08 19:09:02 INFO  time: Imported build in 0.31s
+2025.01.08 19:09:02 INFO  running doctor check
+2025.01.08 19:09:02 INFO  java targets: spark-datos-energia-build, root-test, root
+2025.01.08 19:09:38 INFO  time: indexed workspace in 36s
+2025.01.08 19:24:38 INFO  Started: Metals version 1.4.2 in folders 'C:\Proyectos\spark-datos-energia' for client Visual Studio Code 1.96.2.
+2025.01.08 19:24:43 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta2.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.08 19:24:44 INFO  no build target found for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta2.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.08 19:24:44 INFO  Attempting to connect to the build server...
+2025.01.08 19:24:44 INFO  No running Bloop server found, starting one.
+2025.01.08 19:24:45 INFO  Starting compilation server
+2025.01.08 19:24:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.01.08 19:24:48 INFO  Attempting to connect to the build server...
+2025.01.08 19:24:48 INFO  Found a Bloop server running
+2025.01.08 19:24:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Proyectos\spark-datos-energia\project\.metals\bsp.trace.json or C:\Users\jalva\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.01.08 19:24:47 INFO  time: Connected to build server in 3.68s
+2025.01.08 19:24:47 INFO  Connected to Build server: Bloop v2.0.6
+2025.01.08 19:24:48 INFO  time: Imported build in 0.16s
+2025.01.08 19:24:48 INFO  running doctor check
+2025.01.08 19:24:48 INFO  java targets: spark-datos-energia-build, root-test, root
+2025.01.08 19:25:01 INFO  time: indexed workspace in 13s
+ene 08, 2025 9:33:28 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 320
+2025.01.09 19:20:42 INFO  compiling root (1 scala source)
+2025.01.09 19:20:46 INFO  time: compiled root in 3.62s
+2025.01.09 19:20:53 INFO  compiling root (1 scala source)
+2025.01.09 19:20:55 INFO  time: compiled root in 1.33s
+ene 09, 2025 7:53:11 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 742
+2025.01.09 19:53:25 INFO  compiling root (1 scala source)
+2025.01.09 19:53:26 INFO  time: compiled root in 1.22s
+2025.01.09 19:54:14 INFO  compiling root (1 scala source)
+2025.01.09 19:54:14 INFO  time: compiled root in 0.56s
+2025.01.09 19:54:32 INFO  compiling root (1 scala source)
+2025.01.09 19:54:34 INFO  time: compiled root in 1.25s
+ene 09, 2025 7:56:40 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1041
+2025.01.09 19:57:14 INFO  compiling root (1 scala source)
+2025.01.09 19:57:14 INFO  time: compiled root in 0.98s
+2025.01.09 20:01:51 INFO  compiling root (1 scala source)
+2025.01.09 20:01:52 INFO  time: compiled root in 1.03s
+2025.01.09 20:04:21 INFO  compiling root (1 scala source)
+2025.01.09 20:04:21 INFO  time: compiled root in 0.91s
+2025.01.09 20:05:22 INFO  compiling root (1 scala source)
+2025.01.09 20:05:22 INFO  time: compiled root in 0.93s
+ene 09, 2025 8:05:25 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1843
+2025.01.09 20:05:34 INFO  compiling root (1 scala source)
+2025.01.09 20:05:34 INFO  time: compiled root in 0.9s
+ene 09, 2025 8:06:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1929
+ene 09, 2025 8:06:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1927
+ene 09, 2025 8:06:15 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1931
+2025.01.09 20:06:18 INFO  compiling root (1 scala source)
+2025.01.09 20:06:18 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala
+2025.01.09 20:06:18 WARN  Could not load snapshot text for C:\Proyectos\spark-datos-energia\src\main\scala\example\Consulta3.scala
+2025.01.09 20:06:18 INFO  time: compiled root in 0.89s

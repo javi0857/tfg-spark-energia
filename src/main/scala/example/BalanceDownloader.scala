@@ -26,7 +26,7 @@ object BalanceDownloader {
     }
 
     val start = "2011-01-01T00:00" //Tenemos datos de Balance desde 2011-01-01
-    val end = "2024-12-31T23:59"
+    val end = "2025-01-31T23:59"
     val interval = "year" //Al ser datos diarios podemos solicitar un año entero con cada llamada a la api
     
     //Llamamos a callApi que se encarga de hacer la llamada a la api, tantas veces como intervalos haya entre las fechas start y end
@@ -49,7 +49,7 @@ object BalanceDownloader {
         model.write
             .mode("overwrite")
             //.option("header", "true").csv("data/csv/dsBalanceNacional11-24.csv")
-            .parquet("data/parquet/dsBalanceNacional11-24.parquet")
+            .parquet("data/parquet/dsBalanceNacional11-25.parquet")
 
 
     } else {

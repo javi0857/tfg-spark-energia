@@ -48,15 +48,15 @@ object Consulta1 {
 
 
     //Datos diarios 
-    val ventana = Window.partitionBy("Fecha")
-    val datosBalanceDiarios = datosBalance
-        .withColumn("PorcentajeSobreFamilia", round($"Porcentaje" * 100,2) )
-        .drop("Porcentaje")
-        .withColumn(
-                "TotalGenerado", 
-                round(sum(when(!$"Compuesto" && $"Familia" =!= "Demanda" ,$"Valor").otherwise(0)).over(ventana),2)
-        )
-        .withColumn("PorcentajeSobreTotal", round($"Valor" / $"TotalGenerado" * 100,2))
+        val ventana = Window.partitionBy("Fecha")
+        val datosBalanceDiarios = datosBalance
+            .withColumn("PorcentajeSobreFamilia", round($"Porcentaje" * 100,2) )
+            .drop("Porcentaje")
+            .withColumn(
+                    "TotalGenerado", 
+                    round(sum(when(!$"Compuesto" && $"Familia" =!= "Demanda" ,$"Valor").otherwise(0)).over(ventana),2)
+            )
+            .withColumn("PorcentajeSobreTotal", round($"Valor" / $"TotalGenerado" * 100,2))
             
 
         
@@ -109,14 +109,17 @@ object Consulta1 {
 
 
 
-        val evoluciónRenovablesAnual = datosBalanceAnuales
+        val evolucionRenovablesAnual = datosBalanceAnuales
             .filter($"Tipo".isin("Generación renovable", "Saldo I. internacionales"))
             .select($"Año",$"Tipo", $"PorcentajeSobreTotal", $"TotalGenerado", $"PorcentajeBajasEmisiones")
             .orderBy($"Tipo", $"Año")
 
-    evoluciónRenovablesAnual.show()
+    
+        evolucionRenovablesAnual.show()
 
-
+        datosBalanceAnuales.write
+            .mode("overwrite")
+            .parquet("data/parquet/dsDatosBalanceAnuales.parquet")
 
 
 
@@ -125,3 +128,4 @@ object Consulta1 {
     }
 
 }
+

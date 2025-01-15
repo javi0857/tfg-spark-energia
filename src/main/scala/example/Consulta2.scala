@@ -104,7 +104,7 @@ object Consulta2 {
 
         dfRenombrado.write
             .mode("overwrite")
-            .option("encoding", "UTF-8")
+            //.option("encoding", "UTF-8")
             //.option("header", "true").csv("data/csv/dsMercadoNacionalTotal.csv")
             .parquet("data/parquet/DatosConsulta2.parquet")
 
