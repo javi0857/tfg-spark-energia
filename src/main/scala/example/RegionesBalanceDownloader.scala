@@ -45,7 +45,7 @@ object RegionsBalanceDownoloader {
 
 
         val start = "2011-01-01T00:00" //Tenemos datos de Balance desde 2011-01-01
-        val end = "2025-01-31T23:59"
+        val end = "2024-12-31T23:59"
         val interval = "year" //Al ser datos diarios podemos solicitar un año entero con cada llamada a la api
 
         //Recorremos la lista de regiones y creamos una dupla (Region, listResponse) por cada fila

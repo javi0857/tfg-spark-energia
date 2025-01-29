@@ -19,7 +19,7 @@
         "classpath": [
             "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\sbt\\1.10.2\\sbt-1.10.2.jar",
             "C:\\Users\\jalva\\.sbt\\boot\\scala-2.12.19\\lib\\scala-library.jar",
-            "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.6.0\\sbt-bloop-1.6.0.jar",
+            "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.6.0\\sbt-bloop_2.12_1.0-1.6.0.jar",
             "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\main_2.12\\1.10.2\\main_2.12-1.10.2.jar",
             "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\io_2.12\\1.10.0\\io_2.12-1.10.0.jar",
             "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\bloop-config_2.12\\2.0.2\\bloop-config_2.12-2.0.2.jar",
@@ -231,7 +231,7 @@
             },
             "classpath": [
                 "C:\\Proyectos\\spark-datos-energia\\project\\.bloop\\spark-datos-energia-build\\scala-2.12\\sbt-1.0\\classes",
-                "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.6.0\\sbt-bloop-1.6.0.jar",
+                "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.6.0\\sbt-bloop_2.12_1.0-1.6.0.jar",
                 "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\bloop-config_2.12\\2.0.2\\bloop-config_2.12-2.0.2.jar",
                 "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\plokhotnyuk\\jsoniter-scala\\jsoniter-scala-core_2.12\\2.4.0\\jsoniter-scala-core_2.12-2.4.0.jar",
                 "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\unroll-annotation_2.12\\0.1.12\\unroll-annotation_2.12-0.1.12.jar",
@@ -248,12 +248,12 @@
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.6.0\\sbt-bloop-1.6.0.jar"
+                            "path": "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.6.0\\sbt-bloop_2.12_1.0-1.6.0.jar"
                         },
                         {
                             "name": "sbt-bloop",
                             "classifier": "sources",
-                            "path": "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.6.0\\sbt-bloop-1.6.0-sources.jar"
+                            "path": "C:\\Users\\jalva\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.6.0\\sbt-bloop_2.12_1.0-1.6.0-sources.jar"
                         }
                     ]
                 },

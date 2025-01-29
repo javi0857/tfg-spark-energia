@@ -27,7 +27,7 @@ object IntercambiosDownloader {
             val geo_ids = "13"
 
             val start = "2014-01-01T00:00" //Tenemos datos de Balance desde 2014-01-01
-            val end = "2024-01-31T23:59"
+            val end = "2025-01-31T23:59"
             val interval = "year" //Al ser datos diarios podemos solicitar un año entero con cada llamada a la api
 
         
