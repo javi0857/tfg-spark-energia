@@ -9,8 +9,10 @@ import scala.concurrent.duration._
 import org.apache.spark.sql.{DataFrame,SparkSession}
 import org.apache.spark.sql.functions._
 
+
 import example.Utils._
 import cats.instances.boolean
+
 
 object BalanceDownloader {
   def main(args: Array[String]): Unit = {
@@ -25,6 +27,7 @@ object BalanceDownloader {
             .getOrCreate() 
     }
 
+    import org.apache.spark.sql.functions._
     val start = "2011-01-01T00:00" //Tenemos datos de Balance desde 2011-01-01
     val end = "2025-01-31T23:59"
     val interval = "year" //Al ser datos diarios podemos solicitar un año entero con cada llamada a la api
@@ -42,14 +45,22 @@ object BalanceDownloader {
         }
         val model = listModels.reduce(_ union _)
         
+    
+
         //Imprimimos primeras lineas del modelo
         model.show() 
 
-        //Escribimos los datos en .csv o .parquet
+        //Escribimos los datos en .csv y .parquet
         model.write
             .mode("overwrite")
-            //.option("header", "true").csv("data/csv/dsBalanceNacional11-24.csv")
-            .parquet("data/parquet/dsBalanceNacional11-25.parquet")
+            .option("header", "true")
+            .csv("data/csv/dsBalanceNacionalAnalisis.csv")
+        
+
+        model.write
+            .mode("overwrite")
+            .partitionBy("Año", "Mes") 
+            .parquet("data/parquet/dsBalanceNacionalParticionado.parquet")
 
 
     } else {
@@ -64,7 +75,7 @@ object BalanceDownloader {
 
 
 
-//Definición funciones necesarias: 
+    //Definición funciones necesarias: 
 
 
     def callApiBalance (start: String, end: String, interval: String): Seq[Right[Nothing,String]] = {
@@ -151,6 +162,8 @@ object BalanceDownloader {
             )
             .withColumn("Fecha", expr("FechaAux + INTERVAL 1 HOUR"))
             .withColumn("BajasEmisiones", $"Tipo".isin(bajasEmisiones: _*))
+            .withColumn("Año", year($"Fecha"))
+            .withColumn("Mes", month($"Fecha"))
             .drop($"FechaAux")
     }
 }
