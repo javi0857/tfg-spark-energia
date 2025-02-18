@@ -131,17 +131,6 @@ object MercadosDownloader {
                 sum("Valor").as("Valor"),
                 sum("Porcentaje").as("Porcentaje")
             )
-            
-        // Renombrar columnas si existen
-        // val renamedDF = pivotedDF.columns.foldLeft(pivotedDF) { (df, colName) =>
-        //     colName match {
-        //         case "PVPC (€/MWh)_Valor" => df.withColumnRenamed("PVPC (€/MWh)_Valor", "Valor_PVPC")
-        //         case "PVPC (€/MWh)_Porcentaje" => df.withColumnRenamed("PVPC (€/MWh)_Porcentaje", "Porcentaje_PVPC")
-        //         case "Precio mercado spot_Valor" => df.withColumnRenamed("Precio mercado spot_Valor", "Valor_Mercado_Spot")
-        //         case "Precio mercado spot_Porcentaje" => df.withColumnRenamed("Precio mercado spot_Porcentaje", "Porcentaje_Mercado_Spot")
-        //         case _ => df
-        //     }
-        // }
         
         val renamedDF = pivotedDF
             .withColumnRenamed("PVPC (€/MWh)_Valor", "Valor_PVPC")
